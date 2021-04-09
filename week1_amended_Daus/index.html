@@ -1,0 +1,433 @@
+<html>
+
+ <head>
+     <title>@Daus Has</title>
+     <link rel="icon"  href="img/icon.jpg"/>
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link  href="https:/fonts.googleapis.com/css?family=inter:400,800,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+
+
+
+
+
+<style>
+
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+    body{
+        background-image: url("img/lofi.gif");
+        background-size: 33% ;
+      
+        
+    }
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.8fr;
+        grid-template-areas:
+        "nav nav nav nav"
+        "sidebar main main main" 
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer"
+        ;
+    grid-gap: 0.2rem;
+
+    font-family: "inter",sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+
+}
+
+nav{
+    background:  #E1F8DC;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+    
+}
+
+main{
+    background: #ACDDDE;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+}
+
+#sidebar{
+    background:#ACDDDE;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+}
+
+#content1{
+    background: #E1F8DC;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+    
+}
+#content2{
+    background:#E1F8DC;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+    
+}
+
+#content3{
+    background: rgb(0, 0, 0);
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+}
+
+footer{
+    background:#ACDDDE;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    border-top: var(--main-padding);
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns:  1fr;
+        grid-template-rows:  0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+
+
+    }
+
+    body{
+        background-image: url('img/lofi2.gif');
+    }
+
+}
+
+img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.mycontainer{
+    margin-left: 40px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+
+}
+
+.fontSize{
+    font-size: 20;
+}
+
+
+p {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.h1XL {
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h2 {
+    font-size: x-large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.p2 {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.p2R {
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.p3 {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.p2med {
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+   
+    
+}
+
+.p21 {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 22px;
+}
+.p21right {
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.midDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+
+ </head>
+
+
+<body>
+<div class="container" >
+    <nav class=""> 
+        
+        <div>
+        
+            <h3>live life to the fullest...No regrets</h3>
+        </div> 
+
+
+    </nav>
+
+
+    <main>
+        <h2><strong>About me</strong></h2>
+
+        <div class="mycontainer" style="text-align: center;"> 
+            <p class="p2">My name is Mohammad Firdaus Bin Hasabullah! you can call me Daus. i am an entry level programmer in html, css and js. i graduated from college in february 2021 and
+                obtained my HND in computer science. </p>
+
+                <hr>
+                <p class="p21right"> Hobbies & interest</p>
+                <p class="p3">my hobbies are jogging, 
+                listening to songs, play moba games and i like to walk along the beach.  one of my interest are comics, especially the Batman Series, i also like cars and one 
+                of my favorite is a GTR.</p>    
+        </div>
+            <hr>
+        <div>
+            <p class="p21"> Experience</p>
+            <p class="p2">before the coding.bn program i was a technical support at inframac tech</p>
+            <p class="p2">but my interested in web development grew and got me more interested</p>
+            <p class="p2">in being a web developer. so i resign and then applied for the program</p>
+        </div>
+    
+    
+    </main>
+    
+            
+
+    <div id="sidebar" class="fontSize">
+        <h2>@Daus Has</h2>
+
+        <div>
+            <img src="img/profile.jpg" alt="" class="responsive">
+        </div>
+        <div>
+            <h1>Details</h1>
+            <span>
+                <ul style="list-style-type: none; display: inline-block;">
+                   <li>age :                23</li>
+                   <li>nationality: bruneian</li>
+                   <li>DOB : 19 Feb 1998</li>
+                   <li>likes : spicy food & rain</li>
+                   <li>dislikes :  green tea</li>
+                </ul>
+             
+                <ol style="list-style-type: none; display: inline-block;">
+                   <li></li>
+                   <li></li>
+                   
+                   
+                </ol>
+                <ol style="list-style-type: none; display: inline-block;">
+                    
+                    <li></li>
+                    
+                 </ol>
+            <span>
+        </div>
+
+        
+                                    <div class="midDiv">
+        <div class="gallery" class="midDiv">
+            <div class="desc"> <p> click here for my resume</p> </div>
+            <a target="_blank" href="img/cv.png">
+            
+              <img src="img/cv.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            
+            
+          </div>
+                                    </div>
+    </div>
+
+    <div id="content1" class="">
+        <h2><strong>Skills</strong></h2> 
+        <ul>
+            <li>HTML<progress id="file" value="80" max="100">  </progress></li>   
+        </ul>
+        <ul>
+            <li>CSS<progress id="file" value="70" max="100"> </progress></li>    
+        </ul>
+        <ul>
+            <li>SQL<progress id="file" value="60" max="100">  </progress></li>     
+        </ul>
+        <ul>
+            <li>JAVASCRIPT<progress id="file" value="60" max="100">  </progress></li>     
+        </ul>
+    </div>
+
+    <div id="content2" class="fontSize">
+
+        <h2><strong>Education</strong></h2> 
+
+        <ul style="list-style-type: none; display: inline-block;">
+            
+            <li class="p21">Programs joined</li>
+            <li class="p2">Coding BN :2021 - --</li>       
+         </ul>
+         <hr>
+        <ul style="list-style-type: none; display: inline-block;">
+            <li class="p2R">Formal Education</li>
+            <li class="p3">HND: 2021 </li>
+            <li class="p3">DIPLOMA : 2018</li>
+            <li class="p3">O-LEVELS : 2014</li>
+            
+         </ul>
+    
+    </div>
+
+
+
+    <div id="content3"class="fontSize">
+      
+            <div>
+                <img src="img/lofi2.gif" alt="">
+            </div>
+
+
+    </div>
+    
+    
+    <footer class="fontSize">  
+        <h2><strong>contact me </strong></h2> 
+        <div>
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">ENter Your Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Enter your message:</label>
+                  <input type="text" class="form-control" id="pwd" placeholder="Enter message" name="pswd">
+                  
+                </div>
+                             
+              </form>
+
+              
+  <html>
+    
+    <body> 
+    
+     <input type="submit" onClick="myFunction()"/>
+     <script>
+       function myFunction() {
+         window.location.href="messagesent.html";
+       }
+     </script>
+    
+    </body>
+    
+  </html>
+        </div>
+
+        
+    </footer>
+    
+    
+</div>
+
+    
+</body>
+
+</html>
